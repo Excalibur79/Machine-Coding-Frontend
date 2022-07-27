@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  --headingColor: red;
+}
+html {
+  font-size: 10px;
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid red;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: var(--headingColor);
+  text-align: center;
+}
+.container {
+  width: 60%;
+  border: 2px solid blue;
+  max-width: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
+}
+.addnewtododiv {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul li {
+  border: 2px solid red;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+ul li:nth-child(even) {
+  background-color: grey;
+}
+ul li:nth-child(odd) {
+  background-color: white;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="todo-app" />
+    <meta name="keywords" content="todo,app" />
+    <meta name="author" content="Ankur Saha" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css"></link>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo App</h1>
+      <ul onclick="delegate(event)">
+        <li>Todo 1</li>
+        <li>Todo 2</li>
+        <li>Todo 3</li>
+      </ul>
+      <div class="addnewtododiv">
+        <input id="input" type="text" placeholder="Add new todo"/>
+        <button onclick="addTodo()" >Add Todo</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
